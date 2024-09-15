@@ -1,0 +1,172 @@
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8d4d4; 
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    flex: 1;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin-bottom: 10px;
+}
+
+.nav-button {
+    display: block;
+    width: 150px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #d68b8b;
+    color: #fff;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-button:hover {
+    background-color: #c74f4f;
+    transform: scale(1.1);
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.profile-picture {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.profile-picture img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.profile-picture img:hover {
+    transform: scale(1.1);
+}
+
+.skills {
+    margin-top: 40px;
+}
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+}
+
+.skills-list li {
+    background-color: #d68b8b;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.skills-list li:hover {
+    background-color: #c74f4f;
+    transform: translateY(-5px);
+}
+
+.about-front-end {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #555;
+}
+
+.project-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.project-images img {
+    border-radius: 15px;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.project-images img:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    background-color: #d68b8b;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-link {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+.footer-link.email {
+    color: #000; 
+}
+
+h1, h2, p {
+    transition: transform 0.3s ease;
+}
+
+h1:hover, h2:hover, p:hover {
+    transform: translateY(-5px);
+}
+
+h1 {
+    color: #000;
+}
+
+h2 {
+    color: #000;
+}
+
+p {
+    color: #555;
+}
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+}
